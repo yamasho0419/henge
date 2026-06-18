@@ -7,6 +7,8 @@
 [![Swift](https://img.shields.io/badge/Swift-5.x-F05138.svg?style=flat&logo=swift&logoColor=white)](https://developer.apple.com/swift/)
 [![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey.svg?style=flat&logo=apple)](https://developer.apple.com/ios/)
 
+## URLはこちらです
+https://apps.apple.com/us/app/%E3%83%98%E3%83%B3%E3%82%B2-%E5%A4%89%E5%BD%A2%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B2%E3%83%BC%E3%83%A0/id6759702304
 ---
 
 ## 📱 ゲーム概要
