@@ -45,5 +45,18 @@ https://apps.apple.com/us/app/%E3%83%98%E3%83%B3%E3%82%B2-%E5%A4%89%E5%BD%A2%E3%
 * **言語**: Swift
 * **開発ツール**: Xcode
 
+## コードの構成
+
+SpriteKit で作っています（Xcode のプロジェクト名は `moving`）。
+
+| ファイル | 役割 |
+|---|---|
+| `moving/GameScene.swift` | プレイヤーの変形・移動・当たり判定など、ゲームの本体 |
+| `moving/StageProtocol.swift` | 全ステージが従う共通の型（制限時間と、ステージを組み立てる処理） |
+| `moving/Stage1.swift` 〜 `Stage10.swift` | 各ステージの壁やギミックの配置 |
+| `moving/StageSelectScene.swift` | ステージ選択画面、進み具合の表示とリセット |
+
+ステージは共通の型に合わせて1ファイルずつ作っているので、新しいステージを足すときは本体に手を入れずに済みます。
+
 ## プライバシーポリシーURL:
 https://docs.google.com/document/d/1F5A7NQznoniJdhoBDwJEixMzsqBc2E_6XEJY7cGss1Q/edit?usp=sharing
