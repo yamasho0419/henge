@@ -13,7 +13,7 @@ class Stage9: StageConfiguration {
             scene.createFollowingEnemy(pos: CGPoint(x: midX + CGFloat(i) * spacing, y: maxY - 150), speed: 1.2)
         }
         
-        // ★ クランク・ゲート：横から入らないと通れない！
+        // クランク・ゲート：横から入らないと通れない！
         // 横棒（高さ8px）に変身して、この迷路のような隙間を縫うように進む
         scene.createCrankGate(yPos: maxY - 250, gapY: 30)
         

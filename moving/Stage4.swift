@@ -19,7 +19,6 @@ class Stage4: StageConfiguration {
         // 縦の間隔を詰め、シビアな変身タイミングを要求
         let stepY: CGFloat = wallH + gapV + 10
         
-        // ★ 全体的に上へ移動（startYを -250 から -100 へ）
         let startY = midY - 100
         
         // 1段目：右側に通路

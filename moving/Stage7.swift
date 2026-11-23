@@ -6,7 +6,7 @@ class Stage7: StageConfiguration {
         let midX = scene.frame.midX
         let midY = scene.frame.midY
         
-        // ★ 中央に2つの1/4円を配置
+        // 中央に2つの1/4円を配置
         // 2つの扇を少し離して配置し、その「回転する隙間」を縫って上に登る設計
         
         // 左側の扇：時計回りに回転

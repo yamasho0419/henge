@@ -37,12 +37,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         setupGoal()
         setupBall()
         
-        // ★ 障害物の配置と同時に、ステージ個別の制限時間が timeLeft にセットされる
+        // 障害物の配置と同時に、ステージ個別の制限時間が timeLeft にセットされる
         setupObstacles()
         
         setupDPad()
         setupChangeButton()
-        // ★ setupObstacles()の後に呼ばないと、初期ラベルに正しい時間が反映されません
+        // setupObstacles()の後に呼ばないと、初期ラベルに正しい時間が反映されません
         setupTimerLabel()
         setupMenuButton()
     }

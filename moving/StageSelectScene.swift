@@ -22,7 +22,7 @@ class StageSelectScene: SKScene {
         checkProgressAndShowMessages()
         
         setupCopyright()
-        setupPrivacyPolicy() // ★ 追加：プライバシーポリシーの設定呼び出し
+        setupPrivacyPolicy()
     }
     
     // MARK: - メッセージ表示ロジック
@@ -175,7 +175,7 @@ class StageSelectScene: SKScene {
         addChild(copyrightLabel)
     }
     
-    // ★ 追加：プライバシーポリシーのUI設定
+    // プライバシーポリシーのUI設定
     private func setupPrivacyPolicy() {
         let privacyLabel = SKLabelNode(text: "Privacy Policy")
         privacyLabel.fontName = "Arial-BoldMT"
@@ -210,15 +210,14 @@ class StageSelectScene: SKScene {
             case "reset_trigger": toggleConfirmMode(true)
             case "reset_yes": executeReset()
             case "reset_no": toggleConfirmMode(false)
-            case "privacy_policy": openPrivacyPolicy() // ★ 追加：タップ時の処理
+            case "privacy_policy": openPrivacyPolicy()
             default: break
             }
         }
     }
     
-    // ★ 追加：URLを開く処理
+    // プライバシーポリシーのURLを開く
     private func openPrivacyPolicy() {
-        // ▼ ここに作成したURLを貼り付けてください！
         let urlString = "https://docs.google.com/document/d/1F5A7NQznoniJdhoBDwJEixMzsqBc2E_6XEJY7cGss1Q/edit?usp=sharing"
         
         if let url = URL(string: urlString) {
