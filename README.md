@@ -51,12 +51,12 @@ SpriteKit で作っています（Xcode のプロジェクト名は `moving`）�
 
 | ファイル | 役割 |
 |---|---|
-| `moving/GameScene.swift` | プレイヤーの変形・移動・当たり判定など、ゲームの本体 |
+| `moving/GameScene.swift` | ゲームの本体。プレイヤーの変形・移動・当たり判定と、壁や敵などのギミックを作る関数（動く壁、追跡者、クランクゲートなど） |
 | `moving/StageProtocol.swift` | 全ステージが従う共通の型（制限時間と、ステージを組み立てる処理） |
-| `moving/Stage1.swift` 〜 `Stage10.swift` | 各ステージの壁やギミックの配置 |
+| `moving/Stage1.swift` 〜 `Stage10.swift` | 各ステージで、どのギミックをどこに置くか |
 | `moving/StageSelectScene.swift` | ステージ選択画面、進み具合の表示とリセット |
 
-ステージは共通の型に合わせて1ファイルずつ作っているので、新しいステージを足すときは本体に手を入れずに済みます。
+ギミックは本体に関数としてまとめ、ステージのファイルはそれを呼んで並べるだけにしています。新しいステージは、共通の型に合わせたファイルを1つ足せば作れます。
 
 ## プライバシーポリシーURL:
 https://docs.google.com/document/d/1F5A7NQznoniJdhoBDwJEixMzsqBc2E_6XEJY7cGss1Q/edit?usp=sharing
